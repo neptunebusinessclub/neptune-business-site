@@ -43,16 +43,20 @@ img{max-width:100%; height:auto}
 .wrap{width:min(1120px, 92vw); margin:0 auto}
 
 .stars{
-  position:fixed; inset:-40px;
-  pointer-events:none;
+   position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: .55;
+
+  /* étoiles discrètes */
   background-image:
-    radial-gradient(1px 1px at 12% 20%, rgba(255,255,255,.35), transparent 55%),
-    radial-gradient(1px 1px at 62% 30%, rgba(255,255,255,.28), transparent 55%),
-    radial-gradient(1px 1px at 82% 70%, rgba(255,255,255,.24), transparent 55%),
-    radial-gradient(1px 1px at 22% 76%, rgba(255,255,255,.22), transparent 55%),
-    radial-gradient(1px 1px at 40% 52%, rgba(255,255,255,.18), transparent 55%);
-  opacity:.55;
-  filter: blur(.1px);
+    radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(1px 1px at 30% 80%, rgba(255,255,255,.35), transparent 60%),
+    radial-gradient(1px 1px at 70% 30%, rgba(255,255,255,.35), transparent 60%),
+    radial-gradient(1px 1px at 90% 70%, rgba(255,255,255,.45), transparent 60%);
+  background-repeat: repeat;
+  background-size: 260px 260px;
 }
 
 header{
