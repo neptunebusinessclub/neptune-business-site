@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.neptunebusiness.com/sitemap.xml
